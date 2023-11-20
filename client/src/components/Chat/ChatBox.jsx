@@ -20,10 +20,10 @@ const ChatBox = () => {
     scroll.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  if (!recipientUser)
+  if (!recipientUser) 
     return (
       <p style={{ textAlign: "center", width: "100%" }}>
-        No conversation selected yet..
+       Aucune conversation selectionnée!
       </p>
     );
 
