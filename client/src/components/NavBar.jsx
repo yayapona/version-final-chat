@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid style={{width: "auto", padding: 0 }}>
       <style>
         {`
           .sidebar {
@@ -91,10 +91,10 @@ const NavBar = () => {
           </div>
           
           <Nav className="me-auto">
-            <Stack direction="horizontal" gap={3}>
+            <Stack direction="horizontal" gap={3} style={{marginLeft: "20px"}}>
               {!user && (
                 <>
-                <button className="sidebar-toggle" onClick={toggleSidebar}>
+                <button className="sidebar-toggle" onClick={toggleSidebar} >
                 ☰ Menu
               </button>
                   

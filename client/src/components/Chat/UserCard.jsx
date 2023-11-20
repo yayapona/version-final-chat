@@ -56,7 +56,7 @@ const UserCard = ({ chat, user }) => {
             <img src={avater} alt="person-circle" height="50px" />
           </div>
           <div className="text-content">
-            <div className="name fs-5">{recipientUser?.name}</div>
+            <div className="name fs-5"  style={{color: "black"}}>{recipientUser?.name}</div>
             <div className="text text-muted">
               {latestMessage?.text && (
                 <span>{truncateText(latestMessage?.text)}</span>

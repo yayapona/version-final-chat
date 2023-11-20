@@ -45,18 +45,19 @@ const Notifications = () => {
         )}
       </div>
       {isOpen ? (
-        <div className="notifications-box">
+        <div className="notifications-box, margin-left: 10px, margin-top: 30px" >
           <div className="notifications-header">
-            <h3>Nofications</h3>
+            <h3 style={{ marginTop:'20px'}}>Nofications</h3>
             <div
+              style={{marginLeft: '20px', marginTop:'20px'}}
               className="mark-as-read"
               onClick={() => markAllNotificationsAsRead(notifications)}
             >
-              Mark all as read
+              Marquer tout comme lu
             </div>
           </div>
           {modifiedNotifications?.length === 0 ? (
-            <span className="notification">No notifications yet...</span>
+            <span className="notification">Aucune notification pour l'instant...</span>
           ) : null}
           {modifiedNotifications &&
             modifiedNotifications.map((n, index) => (
@@ -68,7 +69,7 @@ const Notifications = () => {
                   setIsOpen(false);
                 }}
               >
-                <span>{`${n.senderName} sent you a new message...`}</span>
+                <span>{`${n.senderName} je t'ai envoyé un nouveau message...`}</span>
                 <span className="notification-time">
                   {moment(n.date).calendar()}
                 </span>

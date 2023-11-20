@@ -29,11 +29,11 @@ const ChatBox = () => {
 
   if (isMessagesLoading)
     return (
-      <p style={{ textAlign: "center", width: "100%" }}>Loading chat...</p>
+      <p style={{ textAlign: "center", width: "100%" }}>Chargement du chat...</p>
     );
 
   return (
-    <Stack gap={4} className="chat-box">
+    <Stack gap={4} className="chat-box" >
       <div className="chat-header">
         <strong>{recipientUser?.name}</strong>
       </div>
